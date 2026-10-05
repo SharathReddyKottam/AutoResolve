@@ -1,0 +1,20 @@
+[project]
+name = "autoresolve"
+version = "0.1.0"
+description = "Incident auto-resolution agent with RAG, risk-gated actions, and human approval"
+authors = [
+    {name = "Sharath Kottam",email = "sharath16001@gmail.com"}
+]
+license = "MIT"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "pyyaml (>=6.0.3,<7.0.0)",
+    "pydantic (>=2.13.5,<3.0.0)",
+    "rich (>=15.0.0,<16.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
