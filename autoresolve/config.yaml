@@ -1,0 +1,11 @@
+llm:
+  provider: openai      # openai | anthropic
+  model: gpt-4o-mini
+
+embeddings:
+  provider: huggingface
+  model: all-MiniLM-L6-v2
+
+chromadb:
+  persist_dir: .chromadb/
+  collection_name: incidents
