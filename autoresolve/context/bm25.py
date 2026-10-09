@@ -14,4 +14,4 @@ INDEX = BM25Okapi([tokenize(chunk) for chunk in CHUNKS])
 def bm25_search(query: str, k: int = 4) -> list[str]:
     scores = INDEX.get_scores(tokenize(query))
     best = sorted(range(len(CHUNKS)), key=lambda i: scores[i], reverse=True)[:k]
-    return [CHUNKS[i] for i in best]
+    return [CHUNKS[i] for i in best if scores[i] > 0]
