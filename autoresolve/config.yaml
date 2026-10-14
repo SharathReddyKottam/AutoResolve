@@ -1,6 +1,7 @@
 llm:
   provider: openai      # openai | anthropic
   model: gpt-4o-mini
+  temperature: 0
 
 embeddings:
   provider: huggingface
